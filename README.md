@@ -28,6 +28,14 @@ npm install -g .
 npm link
 ```
 
+## Agent Skill 安裝
+
+若你使用支援 Skills 的 Agent／CLI（例如 Codex CLI），可透過 `skills` 指令安裝此專案的 Skill：
+
+```powershell
+npx skills add https://github.com/doggy8088/caption-convert --skill caption-convert
+```
+
 ## 使用方式
 
 ### 以 CLI 指令執行
