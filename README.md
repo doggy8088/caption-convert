@@ -17,7 +17,7 @@
 ### 方式一：全域安裝
 
 ```powershell
-npm install -g .
+npm i -g @willh/caption-convert
 ```
 
 安裝後即可使用 `caption-convert` 指令。
@@ -50,10 +50,10 @@ caption-convert input.srt output.vtt
 node .\src\cli.mjs input.vtt output.ass
 ```
 
-### 使用 npx 執行（在專案資料夾內）
+### 使用 npx 執行（免安裝）
 
 ```powershell
-npx . input.ass output.srt
+npx @willh/caption-convert input.ass output.srt
 ```
 
 ## 參數說明

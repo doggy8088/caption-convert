@@ -1,16 +1,28 @@
 {
   "name": "@willh/caption-convert",
   "version": "0.1.0",
-  "description": "",
-  "main": "src/cli.mjs",
+  "description": "將字幕檔在 .srt、.vtt、.ass 之間互相轉換的命令列工具",
+  "main": "dist/cli.mjs",
   "bin": {
-    "caption-convert": "./src/cli.mjs"
+    "caption-convert": "./dist/cli.mjs"
   },
   "scripts": {
+    "build": "node ./scripts/build.mjs",
+    "prepare": "npm run build",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
+  "files": [
+    "dist/"
+  ],
+  "publishConfig": {
+    "access": "public"
+  },
   "keywords": [
-    "ass", "vtt", "webvtt", "srt", "catpion"
+    "ass",
+    "vtt",
+    "webvtt",
+    "srt",
+    "caption"
   ],
   "author": "Will 保哥",
   "license": "MIT",
